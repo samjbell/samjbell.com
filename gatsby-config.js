@@ -3,24 +3,25 @@
  */
 module.exports = {
   siteMetadata: {
-      siteUrl: `https://www.samjbell.com`,
-      title: 'samjbell portfolio',
+    siteUrl: "https://www.yourdomain.tld",
+    title: "My First Gatsby Site",
   },
-    plugins: [
-	"gatsby-plugin-image",
-	"gatsby-plugin-sharp",
-
-
-	{
-	  
+    
+  plugins: [
+      "gatsby-plugin-image",
+      "gatsby-plugin-sharp",
+    
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `blog`,
-          path: `${__dirname}/src/pages/`,
-	  
-      }
+        path: `${__dirname}/src/pages/blog`,
+      },
     },
-	"gatsby-plugin-mdx",
-	"gatsby-transformer-sharp",
-    ],
+      
+       "gatsby-transformer-sharp",
+       "gatsby-plugin-mdx"
+  ],
 };
+
+

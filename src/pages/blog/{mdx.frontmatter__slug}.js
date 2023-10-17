@@ -32,15 +32,9 @@ query ($id: String) {
       hero_image_alt
       hero_image_credit_link
       hero_image_credit_text
-      hero_image {
-        childImageSharp {
-          gatsbyImageData
-        }  
-      }
     }
+   }
   }
-}
-
 `
 
 export const Head = ({ data }) => <Seo title={data.mdx.frontmatter.title} />
