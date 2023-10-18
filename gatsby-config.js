@@ -4,7 +4,10 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "My First Gatsby Site",
+      title: "My First Gatsby Site",
+      require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+      })
   },
     
   plugins: [
