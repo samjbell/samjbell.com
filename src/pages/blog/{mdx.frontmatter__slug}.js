@@ -12,13 +12,15 @@ const BlogPost = ({data, children}) => {
       <p>{data.mdx.frontmatter.date}</p>
       <GatsbyImage 
       image={image}
-      alt={data.mdx.frontmatter.hero_image_alt}/>
-      <p> Photo Credit:{" "}
-      <a href={data.mdx.frontmatter.hero_image_credit_link}>
-        {data.mdx.frontmatter.hero_image_credit_text}
-      </a>
+      alt={data.mdx.frontmatter.hero_image_alt} 
+      />
+      <p> 
+        Photo Credit:{" "}
+        <a href={data.mdx.frontmatter.hero_image_credit_link}>
+          {data.mdx.frontmatter.hero_image_credit_text}
+        </a>
       </p>
-    {children}
+      {children}
     </Layout>
   )
 }
@@ -33,14 +35,13 @@ query ($id: String) {
       hero_image_credit_link
       hero_image_credit_text
       hero_image {
-        childImageSharp {
-          gatsbyImageData
-        }  
-      }
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      } 
     }
   }
-}
-
 `
 
 export const Head = ({ data }) => <Seo title={data.mdx.frontmatter.title} />
