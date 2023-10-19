@@ -6,17 +6,21 @@ module.exports = {
     siteUrl: "https://www.samjbell.com",
       title: "samjbell",
   },
-    
-  plugins: [
-      "gatsby-plugin-image",
-      "gatsby-plugin-sharp",
-    
-    {
+  
+},
+    plugins: [
+	"gatsby-plugin-image",
+	"gatsby-plugin-sharp",
+	    
+	{
+	  
       resolve: "gatsby-source-filesystem",
       options: {
         name: `blog`,
-        path: `${__dirname}/src/pages/blog`,
-      },
+        path: `${__dirname}/src/pages/`,
+	  
+      }
+
     },
       
        "gatsby-transformer-sharp",
