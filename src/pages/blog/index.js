@@ -14,13 +14,13 @@ const BlogPage = ({data}) => {
                 {node.frontmatter.title}
               </Link>
             </h2>
-              <p>Posted: {node.frontmatter.date}</p>
-              <p>{node.excerpt}</p>
-            </article>
-          ))
-        }
-    </Layout>
-  )
+            <p>Posted: {node.frontmatter.date}</p>
+            <p>{node.excerpt}</p>
+          </article>
+        ))
+      }
+  </Layout>
+)
 }
     
 export const query = graphql`
