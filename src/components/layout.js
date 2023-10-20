@@ -54,21 +54,6 @@ const Layout = ({ pageTitle, children }) => {
       </nav>
       <main>
         <h1 className={heading}>{pageTitle}</h1>
-=======
-import { Link } from 'gatsby'
-
-const Layout = ({ pageTitle, children }) => {
-  return (
-    <div>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
-      </nav>
-      <main>
-        <h1>{pageTitle}</h1>
->>>>>>> refs/remotes/origin/master
         {children}
       </main>
     </div>
