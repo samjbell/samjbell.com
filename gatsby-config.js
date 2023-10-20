@@ -7,24 +7,19 @@ module.exports = {
       title: "samjbell",
   },
   
-},
-    plugins: [
-	"gatsby-plugin-image",
-	"gatsby-plugin-sharp",
-	    
-	{
+  plugins: [
+	  "gatsby-plugin-image",
+	  "gatsby-plugin-sharp",  
+	  {
 	  
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/src/pages/`,
-	  
-      }
-
-    },
-      
-       "gatsby-transformer-sharp",
-       "gatsby-plugin-mdx"
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `blog`,
+      path: `${__dirname}/src/pages/`,
+	  }
+  },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-mdx",
   ],
 };
 
