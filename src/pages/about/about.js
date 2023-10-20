@@ -1,9 +1,6 @@
 import * as React from "react"
-import Layout from '../components/layout'
-<<<<<<< HEAD
-import Seo from '../components/seo'
-=======
->>>>>>> refs/remotes/origin/master
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
 
 const AboutPage = () => {
     return (
@@ -14,13 +11,7 @@ const AboutPage = () => {
     )
 }
 
-<<<<<<< HEAD
-// Rest of the component...
-
 export const Head = () => <Seo title="About Me" />
 
-=======
-export const Head = () => <title>About Me</title>
->>>>>>> refs/remotes/origin/master
 export default AboutPage
 

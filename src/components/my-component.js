@@ -4,7 +4,7 @@ import { title } from './my-component.module.css'
 const MyComponent = () => {
   return (
     <h1 className={title}>
-      Title page
+      Title Page
     </h1>
   )
 }

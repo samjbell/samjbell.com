@@ -1,5 +1,4 @@
 import * as React from 'react'
-<<<<<<< HEAD
 import { Link, useStaticQuery, graphql} from 'gatsby' 
 import {
   container,
