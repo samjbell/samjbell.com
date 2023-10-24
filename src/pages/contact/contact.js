@@ -1,14 +1,21 @@
 import * as React from "react"
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
+import {
+    contactcontainer,
+} from '../../pages/pages.module.css'
 
 const ContactPage = () => {
     return (
-        <Layout pageTitle="Contact">
-            <p> 
+        <>
+          <Layout pageTitle="Contact"> </Layout>
+        
+        <div className={contactcontainer}> 
+        <p> 
                 Feel free to reachout regarding possible opportunies or collaborations
             </p>
-        </Layout>
+        </div>
+        </>
     )
 }
 
