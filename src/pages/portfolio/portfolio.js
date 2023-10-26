@@ -3,14 +3,14 @@ from 'react'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import {
-    portfoliocontainer,
-} from "../../pages/pages.module.css"
+    portfolio_container,
+} from "../../components/layout.module.css"
 
 const PortfolioPage = () => {
     return (
         <>
             <Layout pageTitle="Portfolio"></Layout>
-            <div className={portfoliocontainer}>
+            <div className={portfolio_container}>
                 <p> This page will hold my portfolio projects. </p>
        </div>
        </>    

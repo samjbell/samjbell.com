@@ -1,20 +1,23 @@
-.aboutcontainer {
+.contact-form {
   margin: auto;
   max-width: 500px;
   font-size: 20px;
   font-family: sans-serif;
-}
 
-.portfoliocontainer {
-  margin: auto;
-  max-width: 500px;
-  font-size: 20px;
-  font-family: sans-serif;
-}
+  ul {
+    padding: 0;
+    margin: 0;
 
-.contactcontainer {
-  margin: auto;
-  max-width: 500px;
-  font-size: 20px;
-  font-family: sans-serif;
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: black;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+    }
+  }
 }
