@@ -33,7 +33,7 @@ const ContactPage = () => {
         <div className={container_contact_page}> 
             
         <p> 
-        Feel free to reach out regarding possible opportunities or collaborations
+        Feel free to reach out regarding possible opportunities or collaborations!
             </p>
             </div> 
             <div className={contact_form}>
@@ -49,7 +49,10 @@ const ContactPage = () => {
                         <input placeholder='Subject' type='text' name="subject" required />
                     </li>
                     <li>
-                        <textarea placeholder="Message" name="message" required >    
+                        <textarea placeholder="Message" 
+                        type="text"
+                        name="message" 
+                        required >    
                         </textarea>
                     </li>
                     <li> 
